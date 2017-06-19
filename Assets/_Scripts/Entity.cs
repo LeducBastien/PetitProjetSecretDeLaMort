@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Entity : MonoBehaviour {
-
+public class Entity : MonoBehaviour
+{ 
 	// Use this for initialization
 	void Start () {
 		
