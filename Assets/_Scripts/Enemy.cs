@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : Entity {
+public class Enemy : Entity
+{
+    private Entity _player;
 
-	// Use this for initialization
-	protected override void Start ()
+    [SerializeField] private uint _distance;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        // _player = GetPlayer;
+    }
+
+    protected override void Start ()
     {
         base.Start();
     }
 
-    // Update is called once per frame
+
     protected override void Update ()
     {
         base.Update();
